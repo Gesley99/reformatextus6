@@ -89,11 +89,11 @@ const Services = () => {
         <div className="text-center mt-16">
           <div className="gradient-subtle rounded-2xl p-8 shadow-elegant">
             <h3 className="text-3xl font-playfair font-bold text-foreground mb-4">
-              Precisa de um serviço personalizado?
+              Precisa de algo além da lista acima?
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Entre em contato conosco para discutir suas necessidades específicas. 
-              Criamos soluções sob medida para cada projeto acadêmico.
+              Oferecemos diversos outros serviços acadêmicos, adaptados às mais diferentes necessidades. 
+              Entre em contato e descubra como podemos apoiar o seu projeto.
             </p>
             <button
               className="px-6 py-3 rounded-lg bg-secondary text-secondary-foreground font-semibold shadow hover:shadow-elegant transition"
