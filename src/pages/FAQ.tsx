@@ -97,7 +97,7 @@ const FAQ = () => {
               8. Quantas revisões estão incluídas?
             </summary>
             <p className="mt-2 text-muted-foreground">
-              O contratante tem direito a até <strong>3 correções sem
+              O contratante tem direito a até <strong>3 correções</strong> sem
               custo adicional. Essas revisões cobrem ajustes necessários para
               cumprir o combinado no início do serviço. Alterações extras ou
               fora do escopo inicial podem ser orçadas à parte.
