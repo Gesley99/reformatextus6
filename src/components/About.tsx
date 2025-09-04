@@ -17,7 +17,7 @@ const stats = [
   },
   {
     icon: Trophy,
-    number: "98%",
+    number: "100%",
     label: "Taxa de Aprovação",
     color: "text-primary"
   },
