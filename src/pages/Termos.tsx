@@ -95,9 +95,9 @@ const Termos = () => {
 
         <h2>9. Foro</h2>
         <p>
-          Fica eleito o foro da comarca de <strong>Brasília/DF</strong> para dirimir
-          eventuais conflitos relacionados a estes Termos de Uso, renunciando-se a
-          qualquer outro, por mais privilegiado que seja.
+          Fica eleito o foro da comarca de Brasília/DF para dirimir eventuais conflitos
+          relacionados a estes Termos de Uso, renunciando-se a qualquer outro, por mais
+          privilegiado que seja.
         </p>
 
         <h2>Contato</h2>
