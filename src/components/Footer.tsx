@@ -42,10 +42,10 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-primary-foreground/80">
               <li><a href="#" className="hover:text-primary-foreground transition-colors">TCC & Monografias</a></li>
               <li><a href="#" className="hover:text-primary-foreground transition-colors">Dissertações</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Teses de Doutorado</a></li>
+              <li><a href="#" className="hover:text-primary-foreground transition-colors">Criação de Slides Acadêmicos</a></li>
               <li><a href="#" className="hover:text-primary-foreground transition-colors">Artigos Científicos</a></li>
               <li><a href="#" className="hover:text-primary-foreground transition-colors">Revisão & Formatação</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Trabalhos Urgentes</a></li>
+              <li><a href="#" className="hover:text-primary-foreground transition-colors">Relatório de Estágio</a></li>
             </ul>
           </div>
 
