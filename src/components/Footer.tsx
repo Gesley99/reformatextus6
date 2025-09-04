@@ -56,8 +56,7 @@ const Footer = () => {
               <li><a href="#about" className="hover:text-primary-foreground transition-colors">Sobre Nós</a></li>
               <li><a href="#services" className="hover:text-primary-foreground transition-colors">Serviços</a></li>
               <li><a href="#contact" className="hover:text-primary-foreground transition-colors">Contato</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Política de Privacidade</a></li>
-              <li><a href="/termos" className="hover:text-primary-foreground transition-colors">Termos de Uso</a></li>
+              <li><a href="/termos" className="hover:text-primary-foreground transition-colors">Termos de Uso e Política de Privacidadeo</a></li>
               <li><a href="#" className="hover:text-primary-foreground transition-colors">FAQ</a></li>
             </ul>
           </div>
