@@ -233,6 +233,9 @@ const Contact = () => {
                     />
                   </div>
 
+                  {/* CAPTCHA do Netlify */}
+                  <div data-netlify-recaptcha="true" className="mt-4" />
+
                   <div className="flex items-center gap-3 pt-2">
                     <Button type="submit" variant="hero" className="min-w-40">
                       Enviar
