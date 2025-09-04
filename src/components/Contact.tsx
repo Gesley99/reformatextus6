@@ -48,7 +48,7 @@ const Contact = () => {
                 <CardTitle className="text-2xl">Solicite um orçamento</CardTitle>
               </CardHeader>
               <CardContent>
-                {/* === ABERTURA DO FORM AJUSTADA (Passo 1) === */}
+                {/* === Form === */}
                 <form
                   name="contact"
                   method="POST"
@@ -72,11 +72,24 @@ const Contact = () => {
                         <SelectValue placeholder="Selecione" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="TCC">TCC / Monografia</SelectItem>
-                        <SelectItem value="Artigo">Artigo Científico</SelectItem>
-                        <SelectItem value="RelatorioEstagio">Relatório de Estágio</SelectItem>
-                        <SelectItem value="Slides">Criação de Slides</SelectItem>
-                        <SelectItem value="Revisao">Revisão / Normalização</SelectItem>
+                        <SelectItem value="ArtigoAcademico">Artigo Acadêmico</SelectItem>
+                        <SelectItem value="Dissertacao">Dissertação</SelectItem>
+                        <SelectItem value="EstudoDeCaso">Estudo de Caso</SelectItem>
+                        <SelectItem value="Fichamento">Fichamento</SelectItem>
+                        <SelectItem value="Formatacao">Formatação</SelectItem>
+                        <SelectItem value="Monografia">Monografia</SelectItem>
+                        <SelectItem value="PIM">PIM</SelectItem>
+                        <SelectItem value="Portfolio">Portfólio</SelectItem>
+                        <SelectItem value="PowerPoint">Power Point</SelectItem>
+                        <SelectItem value="ProjetoDeExtensao">Projeto de Extensão</SelectItem>
+                        <SelectItem value="ProjetoDePesquisa">Projeto de Pesquisa</SelectItem>
+                        <SelectItem value="ProjetoDePesquisaMestrado">Projeto de Pesquisa Mestrado</SelectItem>
+                        <SelectItem value="ProjetoDeTCC">Projeto de TCC</SelectItem>
+                        <SelectItem value="Resenha">Resenha</SelectItem>
+                        <SelectItem value="Relatorio">Relatório</SelectItem>
+                        <SelectItem value="Resumo">Resumo</SelectItem>
+                        <SelectItem value="TCC">TCC</SelectItem>
+                        <SelectItem value="TeseDeDoutorado">Tese de Doutorado</SelectItem>
                         <SelectItem value="Outro">Outro</SelectItem>
                       </SelectContent>
                     </Select>
@@ -224,13 +237,22 @@ const Contact = () => {
                     <Button type="submit" variant="hero" className="min-w-40">
                       Enviar
                     </Button>
-                    <Button type="button" variant="outline" onClick={() => window.open("https://wa.me/61996212692", "_blank")}>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      onClick={() =>
+                        window.open(
+                          "https://wa.me/5561996212692?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20Textus%20Acadêmico.",
+                          "_blank"
+                        )
+                      }
+                    >
                       <MessageCircle className="w-5 h-5 mr-2" />
                       Conversar no WhatsApp
                     </Button>
                   </div>
                 </form>
-                {/* === FIM DO FORM AJUSTADO === */}
+                {/* === Fim do form === */}
               </CardContent>
             </Card>
           </div>
@@ -246,17 +268,22 @@ const Contact = () => {
                   Resposta em até 1 dia útil. Para urgências, fale conosco pelo WhatsApp.
                 </p>
 
-                {/* === Botão de WhatsApp (logo abaixo do texto) === */}
+                {/* Botão WhatsApp (logo abaixo do texto) */}
                 <div className="mt-4">
                   <Button
                     variant="hero"
                     className="w-full"
-                    onClick={() => window.open("https://wa.me/61996212692", "_blank")}
+                    onClick={() =>
+                      window.open(
+                        "https://wa.me/5561996212692?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20Textus%20Acadêmico.",
+                        "_blank"
+                      )
+                    }
                   >
                     Falar no WhatsApp
                   </Button>
                 </div>
-                {/* === fim do botão === */}
+                {/* fim do botão */}
               </CardContent>
             </Card>
           </div>
