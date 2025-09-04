@@ -68,7 +68,7 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-primary-foreground/80">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span>Textusacademico@gmail.com</span>
+                <span>textusacademico@gmail.com</span>
               </div>
 
               <div className="flex items-center gap-2">
@@ -97,17 +97,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 lg:px-8 py-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
           <div>© 2025 TEXTUS ACADÊMICO. Todos os direitos reservados.</div>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-primary-foreground transition-colors">
-              Privacidade
-            </a>
-            <a href="#" className="hover:text-primary-foreground transition-colors">
-              Termos
-            </a>
-            <a href="#" className="hover:text-primary-foreground transition-colors">
-              Cookies
-            </a>
-          </div>
+          {/* Links removidos: Privacidade / Termos / Cookies */}
         </div>
       </div>
     </footer>
