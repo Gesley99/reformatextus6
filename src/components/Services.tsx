@@ -93,7 +93,7 @@ const Services = () => {
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               Oferecemos diversos outros serviços acadêmicos, adaptados às mais diferentes necessidades. 
-              Entre em contato e descubra como podemos apoiar o seu projeto.
+              Entre em contato e descubra como podemos apoiar o seu trabalho.
             </p>
             <button
               className="px-6 py-3 rounded-lg bg-secondary text-secondary-foreground font-semibold shadow hover:shadow-elegant transition"
