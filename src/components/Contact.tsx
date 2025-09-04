@@ -1,153 +1,299 @@
-const FAQ = () => {
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { MessageCircle } from "lucide-react";
+
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    course: "",
+    tema: "",
+    service: "",
+    min_pages: "",
+    max_pages: "",
+    deadline: "",
+    deadline_time: "",
+    message: ""
+  });
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+  };
+
   return (
-    <div className="container mx-auto px-6 lg:px-8 py-16 text-foreground">
-      <h1 className="text-3xl md:text-4xl font-playfair font-bold mb-6">
-        FAQ — Textus Acadêmico
-      </h1>
-      <p className="text-sm text-muted-foreground mb-8">
-        Última atualização: 04/09/2025
-      </p>
+    <section id="contato" className="py-24">
+      <div className="container">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-6">
+            Entre em <span className="gradient-primary bg-clip-text text-transparent">Contato</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-balance">
+            Pronto para dar o próximo passo em sua jornada acadêmica?
+            Nossa equipe está aqui para ajudar você a alcançar a excelência.
+          </p>
+        </div>
 
-      <div className="prose prose-neutral max-w-none">
-        <p className="mb-8">
-          Reunimos abaixo as dúvidas mais comuns sobre nossos serviços. Se
-          precisar de algo específico, fale com a nossa equipe pelo formulário
-          ou WhatsApp.
-        </p>
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-8">
+          {/* Contact Form */}
+          <div className="lg:col-span-2">
+            <Card className="shadow-elegant">
+              <CardHeader>
+                <CardTitle className="text-2xl">Solicite um orçamento</CardTitle>
+              </CardHeader>
+              <CardContent>
+                {/* === Form === */}
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  action="/obrigado"
+                  className="space-y-6"
+                >
+                  {/* Netlify hidden fields */}
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p className="hidden">
+                    <label>Não preencha: <input name="bot-field" /></label>
+                  </p>
 
-        <div className="space-y-4">
-          <details className="rounded-lg border border-border p-4 bg-card">
-            <summary className="cursor-pointer font-semibold">
-              1. A assessoria acadêmica é legal e ética?
-            </summary>
-            <p className="mt-2 text-muted-foreground">
-              Sim. Nosso trabalho é 100% ético e dentro da lei. Atuamos como
-              apoio e orientação, fornecendo materiais de referência,
-              consultoria metodológica e revisão. O uso final é de
-              responsabilidade do estudante, sempre respeitando as normas
-              acadêmicas.
-            </p>
-          </details>
+                  {/* Serviço (Select controlado + hidden para Netlify) */}
+                  <input type="hidden" name="Serviço" value={formData.service} />
+                  <div className="space-y-2">
+                    <Label htmlFor="service">Serviço</Label>
+                    <Select value={formData.service} onValueChange={(v) => handleInputChange("service", v)}>
+                      <SelectTrigger id="service">
+                        <SelectValue placeholder="Selecione" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="ArtigoAcademico">Artigo Acadêmico</SelectItem>
+                        <SelectItem value="Dissertacao">Dissertação</SelectItem>
+                        <SelectItem value="EstudoDeCaso">Estudo de Caso</SelectItem>
+                        <SelectItem value="Fichamento">Fichamento</SelectItem>
+                        <SelectItem value="Formatacao">Formatação</SelectItem>
+                        <SelectItem value="Monografia">Monografia</SelectItem>
+                        <SelectItem value="PIM">PIM</SelectItem>
+                        <SelectItem value="Portfolio">Portfólio</SelectItem>
+                        <SelectItem value="PowerPoint">Power Point</SelectItem>
+                        <SelectItem value="ProjetoDeExtensao">Projeto de Extensão</SelectItem>
+                        <SelectItem value="ProjetoDePesquisa">Projeto de Pesquisa</SelectItem>
+                        <SelectItem value="ProjetoDePesquisaMestrado">Projeto de Pesquisa Mestrado</SelectItem>
+                        <SelectItem value="ProjetoDeTCC">Projeto de TCC</SelectItem>
+                        <SelectItem value="Resenha">Resenha</SelectItem>
+                        <SelectItem value="Relatorio">Relatório</SelectItem>
+                        <SelectItem value="Resumo">Resumo</SelectItem>
+                        <SelectItem value="TCC">TCC</SelectItem>
+                        <SelectItem value="TeseDeDoutorado">Tese de Doutorado</SelectItem>
+                        <SelectItem value="Outro">Outro</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
 
-          <details className="rounded-lg border border-border p-4 bg-card">
-            <summary className="cursor-pointer font-semibold">
-              2. Vocês fazem o trabalho por mim ou me ajudam a fazer?
-            </summary>
-            <p className="mt-2 text-muted-foreground">
-              Nosso foco é apoio personalizado. Produzimos materiais de
-              referência, revisões e formatação, sempre com caráter
-              orientativo, para que você aprenda e apresente com segurança.
-            </p>
-          </details>
+                  {/* Dados principais */}
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="name">Nome Completo</Label>
+                      <Input
+                        id="name"
+                        name="Nome"
+                        placeholder="Seu nome completo"
+                        className="focus:ring-2 focus:ring-primary"
+                        value={formData.name}
+                        onChange={(e) => handleInputChange("name", e.target.value)}
+                        required
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="email">E-mail</Label>
+                      <Input
+                        id="email"
+                        name="E-mail"
+                        type="email"
+                        placeholder="seu@email.com"
+                        className="focus:ring-2 focus:ring-primary"
+                        value={formData.email}
+                        onChange={(e) => handleInputChange("email", e.target.value)}
+                        required
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="phone">Telefone</Label>
+                      <Input
+                        id="phone"
+                        name="Telefone"
+                        placeholder="(DDD) 99999-9999"
+                        className="focus:ring-2 focus:ring-primary"
+                        value={formData.phone}
+                        onChange={(e) => handleInputChange("phone", e.target.value)}
+                        required
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="course">Curso</Label>
+                      <Input
+                        id="course"
+                        name="Curso"
+                        placeholder="Ex.: Administração | Direito | Enfermagem"
+                        className="focus:ring-2 focus:ring-primary"
+                        value={formData.course}
+                        onChange={(e) => handleInputChange("course", e.target.value)}
+                      />
+                    </div>
+                  </div>
 
-          <details className="rounded-lg border border-border p-4 bg-card">
-            <summary className="cursor-pointer font-semibold">
-              3. Como funciona o processo de assessoria?
-            </summary>
-            <p className="mt-2 text-muted-foreground">
-              Você entra em contato, entendemos a necessidade, montamos um
-              orçamento personalizado e definimos um cronograma. Durante o
-              processo, você recebe suporte contínuo e revisões até a entrega.
-            </p>
-          </details>
+                  {/* Tema */}
+                  <div className="space-y-2">
+                    <Label htmlFor="tema">Tema</Label>
+                    <Input
+                      id="tema"
+                      name="Tema"
+                      type="text"
+                      placeholder="Ex.: Educação e tecnologia"
+                      className="focus:ring-2 focus:ring-primary"
+                      value={formData.tema}
+                      onChange={(e) => handleInputChange("tema", e.target.value)}
+                    />
+                  </div>
 
-          <details className="rounded-lg border border-border p-4 bg-card">
-            <summary className="cursor-pointer font-semibold">
-              4. Qual a garantia de originalidade do trabalho?
-            </summary>
-            <p className="mt-2 text-muted-foreground">
-              Cada material é elaborado de forma exclusiva, com referências
-              confiáveis e verificação anti-plágio. Entregamos conteúdo
-              original e adequado ao seu tema.
-            </p>
-          </details>
+                  {/* Páginas mín/máx */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <Label htmlFor="min_pages">Páginas (mín.)</Label>
+                      <Input
+                        id="min_pages"
+                        name="Páginas (mín.)"
+                        type="number"
+                        min={1}
+                        placeholder="Ex.: 10"
+                        className="focus:ring-2 focus:ring-primary"
+                        value={formData.min_pages}
+                        onChange={(e) => handleInputChange("min_pages", e.target.value)}
+                        required
+                      />
+                    </div>
+                    <div>
+                      <Label htmlFor="max_pages">Páginas (máx.)</Label>
+                      <Input
+                        id="max_pages"
+                        name="Páginas (máx.)"
+                        type="number"
+                        min={1}
+                        placeholder="Ex.: 15"
+                        className="focus:ring-2 focus:ring-primary"
+                        value={formData.max_pages}
+                        onChange={(e) => handleInputChange("max_pages", e.target.value)}
+                        required
+                      />
+                    </div>
+                  </div>
 
-          <details className="rounded-lg border border-border p-4 bg-card">
-            <summary className="cursor-pointer font-semibold">
-              5. Posso escolher o tema do meu TCC?
-            </summary>
-            <p className="mt-2 text-muted-foreground">
-              Sim. Você pode trazer seu tema ou contar com nossa ajuda para
-              definir um recorte viável e relevante para sua área.
-            </p>
-          </details>
+                  {/* Prazo (data + horário) */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="space-y-2">
+                      <Label htmlFor="deadline">Prazo final (data)</Label>
+                      <Input
+                        id="deadline"
+                        name="Prazo final"
+                        type="date"
+                        className="focus:ring-2 focus:ring-primary"
+                        value={formData.deadline}
+                        onChange={(e) => handleInputChange("deadline", e.target.value)}
+                        required
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="deadline_time">Horário</Label>
+                      <Input
+                        id="deadline_time"
+                        name="Horário"
+                        type="time"
+                        className="focus:ring-2 focus:ring-primary"
+                        value={formData.deadline_time}
+                        onChange={(e) => handleInputChange("deadline_time", e.target.value)}
+                      />
+                    </div>
+                  </div>
 
-          <details className="rounded-lg border border-border p-4 bg-card">
-            <summary className="cursor-pointer font-semibold">
-              6. Vocês fazem formatação (ABNT, Vancouver etc.)?
-            </summary>
-            <p className="mt-2 text-muted-foreground">
-              Sim. Fazemos formatação ABNT, Vancouver e outras normas
-              institucionais, além de revisão completa.
-            </p>
-          </details>
+                  {/* Mensagem */}
+                  <div className="space-y-2">
+                    <Label htmlFor="message">Mensagem</Label>
+                    <Textarea
+                      id="message"
+                      name="Mensagem"
+                      placeholder="Conte brevemente sua necessidade"
+                      className="min-h-[120px] resize-y"
+                      value={formData.message}
+                      onChange={(e) => handleInputChange("message", e.target.value)}
+                    />
+                  </div>
 
-          <details className="rounded-lg border border-border p-4 bg-card">
-            <summary className="cursor-pointer font-semibold">
-              7. Existe suporte para apresentação em banca?
-            </summary>
-            <p className="mt-2 text-muted-foreground">
-              Sim. Ajudamos com roteiro, criação de slides e preparação para a
-              defesa, para que você apresente com confiança.
-            </p>
-          </details>
+                  {/* CAPTCHA do Netlify */}
+                  <div data-netlify-recaptcha="true" className="mt-4" />
 
-          <details className="rounded-lg border border-border p-4 bg-card">
-            <summary className="cursor-pointer font-semibold">
-              8. Quantas revisões estão incluídas?
-            </summary>
-            <p className="mt-2 text-muted-foreground">
-              O contratante tem direito a até <strong>3 correções</strong> sem
-              custo adicional. Essas revisões cobrem ajustes necessários para
-              cumprir o combinado no início do serviço. Alterações extras ou
-              fora do escopo inicial podem ser orçadas à parte.
-            </p>
-          </details>
+                  <div className="flex items-center gap-3 pt-2">
+                    <Button type="submit" variant="hero" className="min-w-40">
+                      Enviar
+                    </Button>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      onClick={() =>
+                        window.open(
+                          "https://wa.me/5561996212692?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20Textus%20Acadêmico.",
+                          "_blank"
+                        )
+                      }
+                    >
+                      <MessageCircle className="w-5 h-5 mr-2" />
+                      Conversar no WhatsApp
+                    </Button>
+                  </div>
+                </form>
+                {/* === Fim do form === */}
+              </CardContent>
+            </Card>
+          </div>
 
-          <details className="rounded-lg border border-border p-4 bg-card">
-            <summary className="cursor-pointer font-semibold">
-              9. Quais tipos de trabalhos vocês atendem?
-            </summary>
-            <p className="mt-2 text-muted-foreground">
-              TCC, monografias, dissertações, teses, artigos, projetos,
-              relatórios, fichamentos, resenhas, resumos, portfólios, slides e
-              outros trabalhos acadêmicos sob demanda.
-            </p>
-          </details>
+          {/* Info card (lado direito) */}
+          <div className="hidden lg:block">
+            <Card className="shadow-elegant">
+              <CardHeader>
+                <CardTitle className="text-2xl">Atendimento</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Resposta em até 1 dia útil. Para urgências, fale conosco pelo WhatsApp.
+                </p>
 
-          <details className="rounded-lg border border-border p-4 bg-card">
-            <summary className="cursor-pointer font-semibold">
-              10. Qual o prazo de entrega?
-            </summary>
-            <p className="mt-2 text-muted-foreground">
-              Depende do tipo e complexidade. Definimos prazos em comum acordo
-              e seguimos um cronograma claro para você acompanhar cada etapa.
-            </p>
-          </details>
-
-          <details className="rounded-lg border border-border p-4 bg-card">
-            <summary className="cursor-pointer font-semibold">
-              11. O atendimento é sigiloso?
-            </summary>
-            <p className="mt-2 text-muted-foreground">
-              Sim. Garantimos confidencialidade dos dados pessoais e do
-              conteúdo, conforme a LGPD e nossa Política de Privacidade.
-            </p>
-          </details>
-
-          <details className="rounded-lg border border-border p-4 bg-card">
-            <summary className="cursor-pointer font-semibold">
-              12. Como é definido o valor?
-            </summary>
-            <p className="mt-2 text-muted-foreground">
-              O preço varia conforme tipo de trabalho, número de páginas,
-              prazos e complexidade. Enviamos orçamento justo e transparente.
-            </p>
-          </details>
+                {/* Botão WhatsApp (logo abaixo do texto) */}
+                <div className="mt-4">
+                  <Button
+                    variant="hero"
+                    className="w-full"
+                    onClick={() =>
+                      window.open(
+                        "https://wa.me/5561996212692?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20Textus%20Acadêmico.",
+                        "_blank"
+                      )
+                    }
+                  >
+                    Falar no WhatsApp
+                  </Button>
+                </div>
+                {/* fim do botão */}
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default FAQ;
+export default Contact;
