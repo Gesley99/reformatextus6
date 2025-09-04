@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+aimport { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { BookOpen, Mail, MapPin, Instagram } from "lucide-react";
 
@@ -36,17 +36,17 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Services */}
+          {/* Aviso Legal (substitui 'Nossos Serviços') */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Nossos Serviços</h4>
-            <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">TCC & Monografias</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Dissertações</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Criação de Slides Acadêmicos</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Artigos Científicos</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Revisão & Formatação</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Relatório de Estágio</a></li>
-            </ul>
+            <h4 className="text-lg font-semibold">Aviso Legal</h4>
+            <p className="text-sm text-primary-foreground/80 leading-relaxed">
+              Os serviços da Textus Acadêmico consistem em apoio acadêmico e consultoria
+              especializada. Todo material entregue tem caráter orientativo, servindo
+              como guia para estudo, organização de ideias e aprimoramento do trabalho
+              do contratante. Não realizamos substituição da atividade discente, nem
+              asseguramos resultados junto às instituições de ensino. O uso adequado
+              dos conteúdos é de exclusiva responsabilidade do cliente.
+            </p>
           </div>
 
           {/* Links */}
