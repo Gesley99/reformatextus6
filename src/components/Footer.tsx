@@ -57,7 +57,7 @@ const Footer = () => {
               <li><a href="#services" className="hover:text-primary-foreground transition-colors">Serviços</a></li>
               <li><a href="#contact" className="hover:text-primary-foreground transition-colors">Contato</a></li>
               <li><a href="#" className="hover:text-primary-foreground transition-colors">Política de Privacidade</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Termos de Uso</a></li>
+              <li><a href="/termos" className="hover:text-primary-foreground transition-colors">Termos de Uso</a></li>
               <li><a href="#" className="hover:text-primary-foreground transition-colors">FAQ</a></li>
             </ul>
           </div>
@@ -97,7 +97,6 @@ const Footer = () => {
       <div className="container mx-auto px-6 lg:px-8 py-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
           <div>© 2025 TEXTUS ACADÊMICO. Todos os direitos reservados.</div>
-          {/* Links removidos: Privacidade / Termos / Cookies */}
         </div>
       </div>
     </footer>
