@@ -55,7 +55,16 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-primary-foreground/80">
               <li><a href="#about" className="hover:text-primary-foreground transition-colors">Sobre Nós</a></li>
               <li><a href="#services" className="hover:text-primary-foreground transition-colors">Serviços</a></li>
-              <li><a href="#contact" className="hover:text-primary-foreground transition-colors">Contato</a></li>
+              <li>
+                <a
+                  href="https://wa.me/61996212692"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-primary-foreground transition-colors"
+                >
+                  Contato
+                </a>
+              </li>
               <li><a href="/termos" className="hover:text-primary-foreground transition-colors">Termos de Uso e Política de Privacidade</a></li>
               <li><a href="/faq" className="hover:text-primary-foreground transition-colors">FAQ</a></li>
             </ul>
