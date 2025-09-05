@@ -90,7 +90,7 @@ const Footer = () => {
                 variant="secondary"
                 size="sm"
                 className="text-sm"
-                onClick={() => window.open("wa.me/61996212692", "_blank")}
+                onClick={() => window.open("https://wa.me/61996212692", "_blank")}
               >
                 Solicitar Orçamento
               </Button>
