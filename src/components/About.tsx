@@ -24,7 +24,7 @@ const stats = [
   {
     icon: Clock,
     number: "24h",
-    label: "Suporte Disponível",
+    label: "+ de 3 anos no mercado",
     color: "text-secondary"
   },
 ];
