@@ -23,8 +23,8 @@ const stats = [
   },
   {
     icon: Clock,
-    number: "24h",
-    label: "+ de 3 anos no mercado",
+    number: "3 +",
+    label: "Anos no mercado",
     color: "text-secondary"
   },
 ];
