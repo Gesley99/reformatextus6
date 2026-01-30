@@ -17,8 +17,7 @@ const Footer = () => {
               <span className="text-2xl font-playfair font-bold">TEXTUS ACADÊMICO</span>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Transformando conhecimento em excelência acadêmica. 
-              Sua jornada educacional merece o melhor suporte.
+              Transformando conhecimento em excelência acadêmica. Sua jornada educacional merece o melhor suporte.
             </p>
             <div className="flex gap-3">
               {/* Botão para Instagram */}
@@ -50,11 +49,12 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Aviso Legal</h4>
             <p className="text-sm text-primary-foreground/80 leading-relaxed">
-              Nossa empresa oferece suporte educacional e assessoria acadêmica personalizados por meio de orientação
-              e materiais de apoio. Não auxiliamos no desenvolvimento trabalhos prontos, nem garantimos aprovação. Todo o conteúdo e
-              suporte fornecidos têm finalidade exclusivamente didática e devem ser utilizados como referência, guia e
-              complemento aos estudos do aluno. A responsabilidade pelo uso, adaptação e entrega final do trabalho
-              acadêmico é integralmente do contratante.
+              Nossa empresa oferece suporte educacional e <strong>mentoria acadêmica</strong> personalizados
+              por meio de orientação e materiais de apoio. <strong>Não produzimos nem desenvolvemos
+              projetos acadêmicos prontos</strong>, tampouco garantimos aprovação. Todo o conteúdo e suporte
+              fornecidos têm finalidade exclusivamente didática e devem ser utilizados como referência,
+              guia e complemento aos estudos do aluno. A responsabilidade pelo desenvolvimento e entrega final
+              do projeto acadêmico é integralmente do contratante.
             </p>
           </div>
 
@@ -62,8 +62,12 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Links Úteis</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li><a href="#about" className="hover:text-primary-foreground transition-colors">Sobre Nós</a></li>
-              <li><a href="#services" className="hover:text-primary-foreground transition-colors">Serviços</a></li>
+              <li>
+                <a href="#about" className="hover:text-primary-foreground transition-colors">Sobre Nós</a>
+              </li>
+              <li>
+                <a href="#services" className="hover:text-primary-foreground transition-colors">Serviços</a>
+              </li>
               <li>
                 <a
                   href="https://wa.me/61996212692"
@@ -74,8 +78,16 @@ const Footer = () => {
                   Contato
                 </a>
               </li>
-              <li><a href="/termos" className="hover:text-primary-foreground transition-colors">Termos de Uso e Política de Privacidade</a></li>
-              <li><a href="/faq" className="hover:text-primary-foreground transition-colors">FAQ</a></li>
+              <li>
+                <a href="/termos" className="hover:text-primary-foreground transition-colors">
+                  Termos de Uso e Política de Privacidade
+                </a>
+              </li>
+              <li>
+                <a href="/faq" className="hover:text-primary-foreground transition-colors">
+                  FAQ
+                </a>
+              </li>
             </ul>
           </div>
 
