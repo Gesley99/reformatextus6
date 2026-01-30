@@ -7,14 +7,14 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center gradient-subtle overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Ambiente acadêmico profissional" 
+        <img
+          src={heroImage}
+          alt="Ambiente acadêmico profissional"
           className="w-full h-full object-cover opacity-20"
         />
         <div className="absolute inset-0 gradient-hero opacity-80"></div>
       </div>
-      
+
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
@@ -27,14 +27,14 @@ const Hero = () => {
                 <Feather className="w-6 h-6 md:w-8 md:h-8 text-secondary absolute -top-1 -right-1 rotate-45" />
               </div>
             </div>
-            
+
             <h1 className="text-5xl md:text-7xl font-playfair font-bold text-primary-foreground text-balance">
               <div className="flex items-center justify-center gap-0 mb-2">
-  <span style={{fontFamily:"Cinzel, serif"}} className="tracking-wide">T</span>
-  <span style={{fontFamily:"Cinzel, serif"}} className="tracking-wide">E</span>
-  <span style={{fontFamily:"Cinzel, serif"}} className="tracking-wide">XTUS</span>
-</div>
-              
+                <span style={{ fontFamily: "Cinzel, serif" }} className="tracking-wide">T</span>
+                <span style={{ fontFamily: "Cinzel, serif" }} className="tracking-wide">E</span>
+                <span style={{ fontFamily: "Cinzel, serif" }} className="tracking-wide">XTUS</span>
+              </div>
+
               {/* Golden Curved Line */}
               <div className="flex justify-center my-4">
                 <svg
@@ -52,16 +52,17 @@ const Hero = () => {
                   />
                 </svg>
               </div>
-              
+
               <span className="gradient-secondary bg-clip-text text-transparent block">ACADÊMICO</span>
             </h1>
           </div>
-          
+
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 animate-slide-up max-w-3xl mx-auto text-balance">
-            Mentoria e assessoria acadêmica especializadas para orientar, revisar e organizar seus projetos com qualidade e ética.
+            Mentoria e <strong>orientação</strong> acadêmica especializadas para revisar, organizar e
+            orientar seus projetos com qualidade e ética.
           </p>
-          
+
           {/* Features Grid */}
           <div className="grid md:grid-cols-3 gap-6 mb-12 animate-slide-up">
             <div className="flex items-center justify-center gap-3 text-primary-foreground/80">
@@ -70,32 +71,36 @@ const Hero = () => {
             </div>
             <div className="flex items-center justify-center gap-3 text-primary-foreground/80">
               <Award className="w-6 h-6 text-secondary" />
-              <span className="font-medium">Qualidade Garantida</span>
+              <span className="font-medium">Excelência Acadêmica</span>
             </div>
             <div className="flex items-center justify-center gap-3 text-primary-foreground/80">
               <ArrowRight className="w-6 h-6 text-secondary" />
-              <span className="font-medium">Entrega no Prazo</span>
+              <span className="font-medium">Suporte no Prazo</span>
             </div>
           </div>
-          
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
-            <Button 
-              variant="cta" 
-              size="lg" 
+            <Button
+              variant="cta"
+              size="lg"
               className="text-lg px-8 py-6"
-              onClick={() => window.open('https://wa.me/61996212692','_blank')}
+              onClick={() => window.open('https://wa.me/61996212692', '_blank')}
             >
               Solicitar Orçamento
               <ArrowRight className="w-5 h-5" />
             </Button>
-            <Button variant="academic" size="lg" className="text-lg px-8 py-6 bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20">
+            <Button
+              variant="academic"
+              size="lg"
+              className="text-lg px-8 py-6 bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20"
+            >
               Ver Nossos Serviços
             </Button>
           </div>
         </div>
       </div>
-      
+
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-primary-foreground/30 rounded-full flex justify-center">
