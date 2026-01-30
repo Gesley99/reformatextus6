@@ -4,34 +4,37 @@ const Termos = () => {
       <h1 className="text-3xl md:text-4xl font-playfair font-bold mb-6">
         Termos de Uso e Política de Privacidade — Textus Acadêmico
       </h1>
+
       <p className="text-sm text-muted-foreground mb-8">
         Última atualização: 04/09/2025
       </p>
 
       <div className="prose prose-neutral max-w-none space-y-6">
+
         {/* ==================== TERMOS DE USO ==================== */}
         <h2>Termos de Uso</h2>
 
         <p>
-          Bem-vindo ao site <strong>Textus Acadêmico</strong>. Ao acessar e
-          utilizar nossos serviços, você concorda com os presentes Termos de
-          Uso. Leia atentamente este documento antes de prosseguir.
+          Bem-vindo ao site <strong>Textus Acadêmico</strong>. Ao acessar e utilizar
+          nossos serviços, você concorda com os presentes Termos de Uso. Leia
+          atentamente este documento antes de prosseguir.
         </p>
 
         <h3>1. Objeto</h3>
         <p>
-          O site Textus Acadêmico tem como objetivo divulgar serviços de apoio
-          acadêmico, como elaboração, revisão, normalização, consultoria e
-          demais atividades ligadas a trabalhos acadêmicos. A utilização do site
-          implica a aceitação integral destes Termos de Uso.
+          O site Textus Acadêmico tem como finalidade divulgar serviços de
+          <strong> mentoria, orientação e apoio acadêmico</strong>, incluindo
+          orientação na elaboração, revisão técnica, normalização acadêmica,
+          consultoria educacional e acompanhamento metodológico. A utilização do
+          site implica a aceitação integral destes Termos de Uso.
         </p>
 
         <h3>2. Condições de Acesso</h3>
         <ul>
           <li>O acesso ao site é gratuito.</li>
           <li>
-            O contato com nossa equipe pode ser feito via formulário ou WhatsApp,
-            conforme disponibilizado no site.
+            O contato com nossa equipe pode ser realizado por meio do formulário
+            eletrônico ou via WhatsApp, conforme disponibilizado no site.
           </li>
           <li>
             Reservamo-nos o direito de atualizar, modificar ou suspender
@@ -41,120 +44,131 @@ const Termos = () => {
 
         <h3>3. Responsabilidades do Usuário</h3>
         <ul>
-          <li>Fornecer informações verdadeiras e completas ao entrar em contato.</li>
           <li>
-            Não utilizar os serviços para fins ilegais, plágio ou outras práticas
-            que violem normas acadêmicas e éticas.
+            Fornecer informações verdadeiras e completas ao entrar em contato.
           </li>
           <li>
-            Respeitar a legislação vigente, especialmente em relação a direitos
-            autorais e propriedade intelectual.
+            Utilizar os serviços de forma ética, respeitando as normas acadêmicas,
+            institucionais e legais vigentes.
+          </li>
+          <li>
+            Não utilizar o suporte fornecido para fins de plágio, fraude acadêmica
+            ou qualquer prática vedada pelas instituições de ensino.
           </li>
         </ul>
 
         <h3>4. Serviços Oferecidos</h3>
         <p>
-          Os serviços do Textus Acadêmico são prestados sob demanda e de forma
-          personalizada, mediante orçamento. Não garantimos aprovação acadêmica,
-          visto que a avaliação depende exclusivamente da instituição de ensino
-          do cliente. O cliente é responsável pela utilização ética do material
-          entregue, que deve ser usado como apoio, referência ou material de
-          estudo.
+          Os serviços da Textus Acadêmico consistem exclusivamente em
+          <strong> orientação, mentoria e apoio educacional personalizado</strong>,
+          prestados sob demanda e mediante orçamento. Não realizamos venda de
+          trabalhos prontos, não substituímos a autoria do estudante e não
+          garantimos aprovação acadêmica, uma vez que a avaliação depende
+          exclusivamente da instituição de ensino do usuário.
+        </p>
+
+        <p>
+          O estudante é responsável pela utilização ética das
+          <strong> orientações, materiais de apoio e conteúdos educacionais
+          fornecidos</strong>, que devem ser utilizados apenas como referência,
+          suporte didático ou material de estudo.
         </p>
 
         <h3>5. Direitos Autorais</h3>
         <p>
-          Todo o conteúdo presente no site (textos, imagens, logotipos, design)
-          pertence ao Textus Acadêmico e não pode ser reproduzido sem autorização.
-          Os materiais desenvolvidos para clientes são personalizados, e os
-          direitos de uso pertencem exclusivamente ao contratante, respeitando os
-          limites estabelecidos em contrato.
+          Todo o conteúdo institucional presente no site (textos, imagens,
+          identidade visual e layout) pertence ao Textus Acadêmico e não pode ser
+          reproduzido sem autorização.
+        </p>
+
+        <p>
+          As <strong>orientações, materiais de apoio e conteúdos educacionais
+          personalizados</strong> disponibilizados aos usuários destinam-se
+          exclusivamente ao uso individual do contratante, respeitando os
+          limites estabelecidos em contrato e as normas de direitos autorais.
         </p>
 
         <h3>6. Limitação de Responsabilidade</h3>
         <p>
-          O Textus Acadêmico não se responsabiliza por eventuais falhas técnicas
-          do site, indisponibilidades temporárias ou por conteúdos externos
-          vinculados por links. Não nos responsabilizamos pelo uso indevido dos
-          materiais entregues, cabendo ao usuário seguir as normas acadêmicas e
-          éticas.
+          O Textus Acadêmico não se responsabiliza por falhas técnicas do site,
+          indisponibilidades temporárias, conteúdos externos acessados por links
+          ou pela utilização indevida das orientações fornecidas.
+        </p>
+
+        <p>
+          O uso final do conteúdo acadêmico é de responsabilidade exclusiva do
+          usuário, que deve observar as normas éticas e acadêmicas de sua
+          instituição de ensino.
         </p>
 
         <h3>7. Alterações nos Termos</h3>
         <p>
           Estes Termos de Uso podem ser atualizados a qualquer momento, sem aviso
-          prévio. A versão vigente será sempre a disponível neste site. Recomendamos
-          que o usuário consulte esta página periodicamente para verificar eventuais
-          mudanças.
+          prévio. A versão vigente será sempre a disponibilizada nesta página.
+          Recomenda-se a leitura periódica deste documento.
         </p>
 
         <h3>8. Foro</h3>
         <p>
-          Fica eleito o foro da comarca de Brasília/DF para dirimir
-          eventuais conflitos relacionados a estes Termos de Uso, renunciando-se a
-          qualquer outro, por mais privilegiado que seja.
+          Fica eleito o foro da comarca de Brasília/DF para dirimir eventuais
+          conflitos relacionados a estes Termos de Uso, renunciando-se a qualquer
+          outro, por mais privilegiado que seja.
         </p>
 
         {/* ==================== POLÍTICA DE PRIVACIDADE ==================== */}
         <h2>Política de Privacidade</h2>
 
         <p>
-          O <strong>Textus Acadêmico</strong> valoriza a privacidade dos seus
-          usuários e se compromete a proteger seus dados pessoais em conformidade
-          com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).
-          Ao utilizar nosso site e nossos serviços, você concorda com esta
-          Política de Privacidade.
+          O <strong>Textus Acadêmico</strong> respeita a privacidade de seus
+          usuários e compromete-se a proteger os dados pessoais em conformidade
+          com a Lei Geral de Proteção de Dados — LGPD (Lei nº 13.709/2018).
         </p>
 
         <h3>1. Dados Coletados</h3>
         <p>
-          Coletamos apenas as informações necessárias para contato e orçamento:
-          nome completo, e-mail, telefone/WhatsApp, curso, tema do trabalho e
-          demais dados informados voluntariamente no formulário de contato.
+          Coletamos apenas informações necessárias para contato e prestação do
+          suporte educacional, tais como nome, e-mail, telefone/WhatsApp, curso,
+          tema de estudo e demais dados fornecidos voluntariamente.
         </p>
 
         <h3>2. Finalidade da Coleta</h3>
         <p>
-          Os dados coletados são utilizados para: responder solicitações de
-          contato, elaborar orçamentos, prestar suporte e melhorar a comunicação
-          com nossos clientes. Não utilizamos os dados para fins de marketing em
-          massa sem o seu consentimento.
+          Os dados coletados são utilizados exclusivamente para comunicação,
+          esclarecimento de dúvidas, envio de informações, elaboração de
+          orçamentos e prestação do serviço de mentoria acadêmica.
         </p>
 
         <h3>3. Compartilhamento de Dados</h3>
         <p>
-          O Textus Acadêmico não compartilha, vende ou transfere dados pessoais
-          a terceiros, salvo em cumprimento de obrigações legais ou por ordem
-          judicial.
+          O Textus Acadêmico não compartilha, comercializa ou transfere dados
+          pessoais a terceiros, exceto quando exigido por obrigação legal ou
+          ordem judicial.
         </p>
 
         <h3>4. Armazenamento e Segurança</h3>
         <p>
           Os dados são armazenados em ambiente seguro e acessíveis apenas por
-          nossa equipe autorizada. Adotamos medidas técnicas e administrativas
-          para proteger as informações contra acessos não autorizados, perda ou
-          alteração.
+          profissionais autorizados, sendo adotadas medidas técnicas e
+          administrativas para proteção das informações.
         </p>
 
         <h3>5. Direitos do Usuário</h3>
         <p>
-          Em conformidade com a LGPD, o usuário pode solicitar a confirmação da
-          existência de tratamento de dados, acesso, correção, exclusão e
-          portabilidade das informações, bem como revogar o consentimento a
-          qualquer momento.
+          O usuário poderá solicitar confirmação da existência de tratamento de
+          dados, acesso, correção, exclusão, portabilidade ou revogação do
+          consentimento, conforme previsto na LGPD.
         </p>
 
         <h3>6. Retenção dos Dados</h3>
         <p>
-          Os dados pessoais serão mantidos apenas pelo tempo necessário para
-          cumprir as finalidades descritas nesta política ou exigências legais.
+          Os dados pessoais serão mantidos somente pelo período necessário para
+          cumprimento das finalidades educacionais ou exigências legais.
         </p>
 
         <h3>7. Alterações na Política</h3>
         <p>
-          Esta Política de Privacidade pode ser atualizada a qualquer momento,
-          sem aviso prévio. A versão vigente será sempre a publicada nesta página.
-          Recomendamos que o usuário a consulte regularmente.
+          Esta Política de Privacidade poderá ser atualizada a qualquer momento.
+          A versão vigente será sempre a publicada nesta página.
         </p>
 
         <h3>8. Contato</h3>
@@ -162,6 +176,7 @@ const Termos = () => {
           📧 E-mail: textusacademico@gmail.com <br />
           📱 WhatsApp: (61) 99621-2692
         </p>
+
       </div>
     </div>
   );
