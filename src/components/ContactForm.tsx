@@ -68,8 +68,7 @@ export default function ContactForm() {
   };
 
   const inputClass = (field: keyof FormData) =>
-    `w-full rounded-lg border px-4 py-3 md:py-3 text-sm font-body bg-background text-foreground transition-all duration-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-accent/30 ${
-      errors[field] && touched.has(field) ? "border-destructive" : "border-input"
+    `w-full rounded-lg border px-4 py-3 md:py-3 text-sm font-body bg-background text-foreground transition-all duration-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-accent/30 ${errors[field] && touched.has(field) ? "border-destructive" : "border-input"
     }`;
 
   return (

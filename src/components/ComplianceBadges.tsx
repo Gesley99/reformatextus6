@@ -18,9 +18,8 @@ export default function ComplianceBadges() {
         {BADGES.map((b) => (
           <div
             key={b.label}
-            className={`scroll-reveal flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-4 py-2 text-xs font-medium font-body hover:scale-110 hover:shadow-[0_0_12px_hsl(var(--accent)/0.4)] transition-all duration-200 ${
-              b.critical ? "ring-2 ring-accent" : ""
-            }`}
+            className={`scroll-reveal flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-4 py-2 text-xs font-medium font-body hover:scale-110 hover:shadow-[0_0_12px_hsl(var(--accent)/0.4)] transition-all duration-200 ${b.critical ? "ring-2 ring-accent" : ""
+              }`}
           >
             <b.icon size={14} />
             {b.label}

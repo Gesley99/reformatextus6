@@ -50,9 +50,8 @@ export default function HeroSection() {
       <div className="relative z-10 container mx-auto px-4 md:px-6 pt-28 md:pt-32 pb-16">
         <div className="max-w-4xl">
           <h1
-            className={`font-display text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-primary-foreground leading-[0.95] text-balance ${
-              loaded ? "animate-fade-rise" : "opacity-0"
-            }`}
+            className={`font-display text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-primary-foreground leading-[0.95] text-balance ${loaded ? "animate-fade-rise" : "opacity-0"
+              }`}
             style={{ lineHeight: 1 }}
           >
             Apoio Acadêmico de Qualidade{" "}
@@ -61,9 +60,8 @@ export default function HeroSection() {
           </h1>
 
           <p
-            className={`mt-6 md:mt-8 text-primary-foreground/85 text-base md:text-lg max-w-xl font-body text-pretty ${
-              loaded ? "animate-fade-rise" : "opacity-0"
-            }`}
+            className={`mt-6 md:mt-8 text-primary-foreground/85 text-base md:text-lg max-w-xl font-body text-pretty ${loaded ? "animate-fade-rise" : "opacity-0"
+              }`}
             style={{ animationDelay: "0.2s" }}
           >
             Oferecemos suporte completo para sua trajetória acadêmica. Apoio personalizado para universitários com orientação especializada em TCC, artigos e projetos.

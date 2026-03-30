@@ -29,8 +29,8 @@ export default function AboutSection() {
               Apoio Acadêmico de Qualidade para Sua Jornada
             </h3>
             <p className="text-muted-foreground font-body text-pretty leading-relaxed">
-              Somos uma empresa especializada em apoio acadêmico e orientação para estudantes universitários, com mais de 5 anos de experiência ajudando centenas de alunos. 
-              Nosso compromisso é oferecer aconselhamento acadêmico com clareza, profissionalismo e respeito aos seus prazos, sempre guiando você no 
+              Somos uma empresa especializada em apoio acadêmico e orientação para estudantes universitários, com mais de 5 anos de experiência ajudando centenas de alunos.
+              Nosso compromisso é oferecer aconselhamento acadêmico com clareza, profissionalismo e respeito aos seus prazos, sempre guiando você no
               desenvolvimento do seu próprio trabalho acadêmico.
             </p>
             <ul className="mt-6 space-y-3">
