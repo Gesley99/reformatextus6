@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const WA_LINK = "https://wa.me/55619621262?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20apoio%20acad%C3%AAmico.";
+const WA_LINK = "https://wa.me/556196212692?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20apoio%20acad%C3%AAmico.";
 
 export default function SecondaryCTA() {
   const ref = useScrollReveal<HTMLElement>();
