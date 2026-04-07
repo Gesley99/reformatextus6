@@ -55,7 +55,7 @@ export default function FooterSection() {
               </a>
             </li>
             <li>
-              <a href="tel:+5561962126292" className="flex items-center gap-2 text-sm text-primary-foreground/70 hover:text-accent transition-colors">
+              <a href="tel:+556196212692" className="flex items-center gap-2 text-sm text-primary-foreground/70 hover:text-accent transition-colors">
                 <Phone size={14} /> +55 61 9621-2692
               </a>
             </li>
