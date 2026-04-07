@@ -61,7 +61,7 @@ export default function ContactForm() {
     if (Object.keys(allErrors).length > 0) return;
 
     const msg = `Olá! Meu nome é ${form.name}. Preciso de apoio acadêmico em: ${form.workType}. Nível: ${form.academicLevel || "Não informado"}. Detalhes: ${form.description}. Email: ${form.email}. Telefone: ${form.phone}.`;
-    const url = `https://wa.me/55619621262?text=${encodeURIComponent(msg)}`;
+    const url = `https://wa.me/556196212692?text=${encodeURIComponent(msg)}`;
 
     toast({ title: "Redirecionando para o WhatsApp...", description: "Aguarde um momento." });
     setTimeout(() => window.open(url, "_blank"), 1500);
