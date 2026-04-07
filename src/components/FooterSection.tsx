@@ -11,7 +11,7 @@ const FOOTER_LINKS = [
 const SOCIAL = [
   { icon: Instagram, label: "Instagram", href: "https://instagram.com/textusacademico" },
   { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61580266383775&locale=pt_BR" },
-  { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/55619621262" },
+  { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/556196212692" },
 ];
 
 export default function FooterSection() {
