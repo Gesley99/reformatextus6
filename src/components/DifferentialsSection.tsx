@@ -2,17 +2,10 @@ import { Users, Zap, Lock, Shield } from "lucide-react";
 import { useStaggerReveal } from "@/hooks/useScrollReveal";
 
 const DIFFS = [
-<<<<<<< HEAD
   { icon: Users, title: "Personalizado", desc: "Cada aluno tem necessidades únicas. Orientação totalmente customizada para sua realidade, tema, curso e objetivos de aprendizagem." },
   { icon: Zap, title: "Rápido", desc: "Respondemos em no máximo 2 horas. Seus prazos são importantes e respeitamos seus cronogramas acadêmicos." },
   { icon: Lock, title: "Confidencial", desc: "Discrição total. Seus dados e conteúdos são tratados com sigilo profissional e máxima privacidade." },
   { icon: Shield, title: "Transparente", desc: "Verificação de originalidade inclusa e análise de IA. Você sabe exatamente o nível de originalidade do conteúdo que produziu." },
-=======
-  { icon: Users, title: "Personalizado", desc: "Cada aluno tem necessidades únicas. Orientação totalmente customizada para sua realidade, tema, curso e objetivos." },
-  { icon: Zap, title: "Rápido", desc: "Respondemos em no máximo 2 horas. Seus prazos são importantes e respeitamos seus cronogramas." },
-  { icon: Lock, title: "Confidencial", desc: "Discrição total. Seus dados e conteúdos são tratados com sigilo profissional e máxima privacidade." },
-  { icon: Shield, title: "Com Relatório", desc: "Verificação de plágio inclusa e análise de IA. Transparência total sobre a originalidade do seu trabalho." },
->>>>>>> 046218b01546855bc85d478cbc589878f54830ad
 ];
 
 export default function DifferentialsSection() {

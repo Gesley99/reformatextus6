@@ -2,19 +2,11 @@ import { MessageSquare, FileText, Lightbulb, CheckCircle, Smile } from "lucide-r
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const STEPS = [
-<<<<<<< HEAD
   { icon: MessageSquare, title: "Você Entra em Contato", desc: "Envie sua demanda via WhatsApp ou formulário. Conte-nos sobre seu tema, curso e prazo." },
   { icon: FileText, title: "Análise das Necessidades", desc: "Nossa equipe avalia suas necessidades, identifica dificuldades e traça um plano de orientação personalizado." },
   { icon: Lightbulb, title: "Orientação e Direcionamento", desc: "Você recebe guias, feedbacks e sugestões de melhoria para desenvolver seu trabalho de forma autônoma." },
   { icon: CheckCircle, title: "Revisão Técnica e Feedback", desc: "Revisamos seu trabalho com sugestões detalhadas de melhoria para que você faça os ajustes necessários." },
   { icon: Smile, title: "Você Finaliza com Confiança", desc: "Com a orientação recebida, você aprimora e entrega seu próprio trabalho com mais segurança e qualidade." },
-=======
-  { icon: MessageSquare, title: "Você Entra em Contato", desc: "Envie sua demanda via WhatsApp ou formulário de contato." },
-  { icon: FileText, title: "Análise Inicial", desc: "Nossa equipe analisa suas necessidades e cronograma." },
-  { icon: Lightbulb, title: "Orientação Personalizada", desc: "Orientação acadêmica com guias, feedbacks e ajustes direcionados." },
-  { icon: CheckCircle, title: "Revisão e Ajustes", desc: "Revisão completa com sugestões detalhadas de melhoria." },
-  { icon: Smile, title: "Você Recebe Orientado", desc: "Material revisado e orientado, pronto para você desenvolver e entregar." },
->>>>>>> 046218b01546855bc85d478cbc589878f54830ad
 ];
 
 export default function HowItWorks() {
@@ -24,16 +16,11 @@ export default function HowItWorks() {
     <section id="como-funciona" className="bg-section-alt py-20 md:py-28 px-4 md:px-6" aria-labelledby="how-title" ref={ref}>
       <div className="container mx-auto max-w-5xl scroll-reveal">
         <h2 id="how-title" className="font-display text-2xl md:text-4xl text-primary text-center text-balance">
-<<<<<<< HEAD
           Como Funciona Nossa Orientação Acadêmica
         </h2>
         <p className="mt-3 text-center text-muted-foreground font-body text-sm max-w-2xl mx-auto">
           Nosso processo é focado em orientar e capacitar você a desenvolver seu próprio trabalho acadêmico.
         </p>
-=======
-          Como Funciona Nosso Apoio Acadêmico
-        </h2>
->>>>>>> 046218b01546855bc85d478cbc589878f54830ad
 
         {/* Desktop horizontal timeline */}
         <div className="hidden md:flex items-start justify-between mt-16 relative">

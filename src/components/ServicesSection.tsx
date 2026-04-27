@@ -2,21 +2,12 @@ import { BookOpen, FileText, Briefcase, FileCheck, PencilRuler, Shield } from "l
 import { useStaggerReveal } from "@/hooks/useScrollReveal";
 
 const SERVICES = [
-<<<<<<< HEAD
   { icon: BookOpen, title: "Orientação para TCC", desc: "Suporte na estruturação, organização e metodologia do seu trabalho de conclusão de curso. Você desenvolve, nós orientamos." },
   { icon: FileText, title: "Suporte Metodológico para Artigos", desc: "Orientação sobre metodologia científica, coerência textual e adequação às normas ABNT para seu artigo acadêmico." },
   { icon: Briefcase, title: "Acompanhamento de Projetos Universitários", desc: "Orientação personalizada para estruturação e organização de projetos acadêmicos de diversas áreas do conhecimento." },
   { icon: FileCheck, title: "Revisão de Trabalhos Acadêmicos", desc: "Revisão técnica, formatação conforme ABNT e feedback detalhado para aprimorar o seu trabalho acadêmico." },
   { icon: PencilRuler, title: "Formatação e Normalização ABNT", desc: "Adequação completa do seu trabalho às normas ABNT, APA ou Vancouver, garantindo conformidade técnica." },
   { icon: Shield, title: "Verificação de Originalidade e IA", desc: "Relatório de originalidade e análise de Inteligência Artificial para garantir transparência sobre o conteúdo que você produziu." },
-=======
-  { icon: BookOpen, title: "Consultoria para TCC", desc: "Apoio completo na estruturação, organização e revisão do seu trabalho de conclusão de curso com orientação especializada." },
-  { icon: FileText, title: "Suporte para Artigos Científicos", desc: "Apoio acadêmico na metodologia, coerência textual e normalização ABNT para seu artigo acadêmico." },
-  { icon: Briefcase, title: "Apoio para Projetos Universitários", desc: "Acompanhamento personalizado para estruturação e organização de projetos acadêmicos de diversas áreas." },
-  { icon: FileCheck, title: "Suporte para Trabalhos Acadêmicos", desc: "Estruturação, formatação e revisão de relatórios acadêmicos e profissionais com orientação especializada." },
-  { icon: PencilRuler, title: "Revisão e Formatação de TCC", desc: "ABNT, correção gramatical e revisão visual completa do seu trabalho acadêmico." },
-  { icon: Shield, title: "Verificação de Plágio e IA", desc: "Relatório de originalidade e análise de IA para total transparência sobre seu trabalho." },
->>>>>>> 046218b01546855bc85d478cbc589878f54830ad
 ];
 
 export default function ServicesSection() {
@@ -26,16 +17,11 @@ export default function ServicesSection() {
     <section id="servicos" className="bg-background py-20 md:py-28 px-4 md:px-6" aria-labelledby="services-title">
       <div className="container mx-auto max-w-6xl">
         <h2 id="services-title" className="font-display text-2xl md:text-4xl text-primary text-center text-balance">
-<<<<<<< HEAD
           Nossos Serviços de Orientação Acadêmica
         </h2>
         <p className="mt-3 text-center text-muted-foreground font-body text-sm max-w-2xl mx-auto">
           Oferecemos orientação educacional, revisão técnica e suporte metodológico. O desenvolvimento do trabalho é de responsabilidade do aluno.
         </p>
-=======
-          Nossos Serviços de Apoio Acadêmico
-        </h2>
->>>>>>> 046218b01546855bc85d478cbc589878f54830ad
         <div ref={ref} className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {SERVICES.map((s) => (
             <article

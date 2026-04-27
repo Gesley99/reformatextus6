@@ -48,11 +48,7 @@ export default function Navbar() {
             </button>
           ))}
           <Button variant="navCta" size="sm" onClick={() => scrollTo("#contato")}>
-<<<<<<< HEAD
             Solicitar Orientação
-=======
-            Solicitar Apoio
->>>>>>> 046218b01546855bc85d478cbc589878f54830ad
           </Button>
         </div>
 
@@ -88,11 +84,7 @@ export default function Navbar() {
                 </button>
               ))}
               <Button variant="navCta" size="lg" className="mt-6" onClick={() => scrollTo("#contato")}>
-<<<<<<< HEAD
                 Solicitar Orientação
-=======
-                Solicitar Apoio
->>>>>>> 046218b01546855bc85d478cbc589878f54830ad
               </Button>
             </div>
           </div>

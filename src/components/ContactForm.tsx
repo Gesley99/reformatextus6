@@ -60,11 +60,7 @@ export default function ContactForm() {
     setTouched(new Set(Object.keys(form)));
     if (Object.keys(allErrors).length > 0) return;
 
-<<<<<<< HEAD
     const msg = `Olá! Meu nome é ${form.name}. Preciso de orientação acadêmica em: ${form.workType}. Nível: ${form.academicLevel || "Não informado"}. Detalhes: ${form.description}. Email: ${form.email}. Telefone: ${form.phone}.`;
-=======
-    const msg = `Olá! Meu nome é ${form.name}. Preciso de apoio acadêmico em: ${form.workType}. Nível: ${form.academicLevel || "Não informado"}. Detalhes: ${form.description}. Email: ${form.email}. Telefone: ${form.phone}.`;
->>>>>>> 046218b01546855bc85d478cbc589878f54830ad
     const url = `https://wa.me/556196212692?text=${encodeURIComponent(msg)}`;
 
     toast({ title: "Redirecionando para o WhatsApp...", description: "Aguarde um momento." });
@@ -81,12 +77,9 @@ export default function ContactForm() {
         <h2 id="contact-title" className="font-display text-2xl md:text-4xl text-primary text-center text-balance">
           Solicite Sua Orientação Acadêmica Personalizada
         </h2>
-<<<<<<< HEAD
         <p className="mt-2 text-center text-muted-foreground font-body text-xs max-w-lg mx-auto">
           Oferecemos orientação educacional, revisão técnica e suporte metodológico. Não elaboramos trabalhos acadêmicos completos.
         </p>
-=======
->>>>>>> 046218b01546855bc85d478cbc589878f54830ad
         <p className="mt-3 text-center text-muted-foreground font-body text-sm">Responderemos em até 2 horas úteis</p>
 
         <form onSubmit={handleSubmit} className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5" noValidate>
@@ -138,7 +131,6 @@ export default function ContactForm() {
           </div>
 
           {/* Submit */}
-<<<<<<< HEAD
           <div className="md:col-span-2 flex flex-col items-center gap-3">
             <Button type="submit" variant="default" size="xl" className={`rounded-full px-8 transition-all duration-300 ${isValid ? "hover:scale-105 hover:shadow-[0_0_16px_hsl(var(--accent)/0.4)]" : "opacity-60 cursor-not-allowed"}`} disabled={!isValid}>
               Solicitar Orientação via WhatsApp
@@ -146,12 +138,6 @@ export default function ContactForm() {
             <p className="text-muted-foreground text-[10px] font-body text-center max-w-sm">
               Ao enviar, você concorda que nosso serviço é de orientação educacional. A autoria e responsabilidade pelo trabalho são do aluno.
             </p>
-=======
-          <div className="md:col-span-2 flex justify-center">
-            <Button type="submit" variant="default" size="xl" className={`rounded-full px-8 transition-all duration-300 ${isValid ? "hover:scale-105 hover:shadow-[0_0_16px_hsl(var(--accent)/0.4)]" : "opacity-60 cursor-not-allowed"}`} disabled={!isValid}>
-              Enviar para WhatsApp
-            </Button>
->>>>>>> 046218b01546855bc85d478cbc589878f54830ad
           </div>
         </form>
       </div>
