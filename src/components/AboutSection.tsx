@@ -1,14 +1,24 @@
+<<<<<<< HEAD
 import { CheckCircle, Zap, Lock, GraduationCap, BookOpen } from "lucide-react";
+=======
+import { CheckCircle, Zap, Lock } from "lucide-react";
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import logoTextus from "@/assets/logo-textus.png";
 
 const BULLETS = [
+<<<<<<< HEAD
   { icon: CheckCircle, text: "Atendimento 100% personalizado e focado no aluno" },
   { icon: GraduationCap, text: "Foco em aprendizagem, clareza e organização" },
   { icon: BookOpen, text: "Orientação conforme ABNT com foco em originalidade" },
   { icon: Zap, text: "Resposta em até 2 horas para sua orientação" },
   { icon: Lock, text: "Comunicação discreta, profissional e acessível" },
+=======
+  { icon: CheckCircle, text: "Atendimento 100% personalizado" },
+  { icon: Zap, text: "Foco em ABNT e originalidade" },
+  { icon: Lock, text: "Comunicação clara, discreta e acessível" },
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
 ];
 
 export default function AboutSection() {
@@ -28,6 +38,7 @@ export default function AboutSection() {
           </div>
           <div>
             <h3 className="font-display text-xl md:text-2xl text-primary mb-4 font-bold">
+<<<<<<< HEAD
               Orientação Acadêmica Especializada Para Sua Jornada
             </h3>
             <p className="text-muted-foreground font-body text-pretty leading-relaxed">
@@ -49,6 +60,15 @@ export default function AboutSection() {
               </ul>
             </div>
 
+=======
+              Apoio Acadêmico de Qualidade para Sua Jornada
+            </h3>
+            <p className="text-muted-foreground font-body text-pretty leading-relaxed">
+              Somos uma empresa especializada em apoio acadêmico e orientação para estudantes universitários, com mais de 5 anos de experiência ajudando centenas de alunos.
+              Nosso compromisso é oferecer aconselhamento acadêmico com clareza, profissionalismo e respeito aos seus prazos, sempre guiando você no
+              desenvolvimento do seu próprio trabalho acadêmico.
+            </p>
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
             <ul className="mt-6 space-y-3">
               {BULLETS.map((b) => (
                 <li key={b.text} className="flex items-center gap-3 text-foreground font-body text-sm">

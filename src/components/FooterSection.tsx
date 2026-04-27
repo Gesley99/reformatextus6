@@ -1,5 +1,8 @@
 import { Mail, Phone, Instagram, Facebook, MessageCircle } from "lucide-react";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
+=======
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
 
 const FOOTER_LINKS = [
   { label: "Serviços", href: "#servicos" },
@@ -22,6 +25,7 @@ export default function FooterSection() {
 
   return (
     <footer className="bg-primary text-primary-foreground py-12 md:py-16 px-4 md:px-6" role="contentinfo">
+<<<<<<< HEAD
       {/* Compliance disclaimer in footer */}
       <div className="container mx-auto max-w-6xl mb-10 pb-8 border-b border-primary-foreground/10">
         <p className="text-primary-foreground/60 text-xs font-body text-center max-w-3xl mx-auto leading-relaxed">
@@ -31,11 +35,17 @@ export default function FooterSection() {
         </p>
       </div>
 
+=======
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
       <div className="container mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
         {/* Brand */}
         <div>
           <p className="font-display text-xl font-bold">TEXTUS ACADÊMICO</p>
+<<<<<<< HEAD
           <p className="text-sm text-primary-foreground/70 mt-1">Orientação Educacional e Suporte Metodológico</p>
+=======
+          <p className="text-sm text-primary-foreground/70 mt-1">Apoio Acadêmico e Orientação Especializada</p>
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
         </div>
 
         {/* Navigation */}
@@ -96,6 +106,7 @@ export default function FooterSection() {
 
       {/* Bottom */}
       <div className="container mx-auto max-w-6xl mt-10 pt-6 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-3">
+<<<<<<< HEAD
         <p className="text-xs text-primary-foreground/50">© 2025 Textus Acadêmico — Orientação Educacional. Todos os direitos reservados.</p>
         <div className="flex gap-4">
           <Link to="/politica-de-privacidade" className="text-xs text-primary-foreground/50 hover:text-accent transition-colors">
@@ -110,6 +121,13 @@ export default function FooterSection() {
           >
             Aviso Legal
           </button>
+=======
+        <p className="text-xs text-primary-foreground/50">© 2025 Textus Acadêmico. Todos os direitos reservados.</p>
+        <div className="flex gap-4">
+          {["Política de Privacidade", "Termos de Serviço", "Aviso Legal"].map((t) => (
+            <button key={t} className="text-xs text-primary-foreground/50 hover:text-accent transition-colors">{t}</button>
+          ))}
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
         </div>
       </div>
     </footer>

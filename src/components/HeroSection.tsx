@@ -1,11 +1,19 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
+<<<<<<< HEAD
 import { Shield, FileCheck, MessageCircle, Clock, GraduationCap } from "lucide-react";
+=======
+import { Shield, FileCheck, MessageCircle, Clock } from "lucide-react";
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
 import { useStaggerReveal } from "@/hooks/useScrollReveal";
 
 const TRUST_ITEMS = [
   { icon: Shield, label: "Suporte 100% Confidencial" },
+<<<<<<< HEAD
   { icon: FileCheck, label: "Relatório de Originalidade Incluso" },
+=======
+  { icon: FileCheck, label: "Relatório de Plágio Incluso" },
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
   { icon: MessageCircle, label: "Atendimento via WhatsApp" },
   { icon: Clock, label: "Resposta em até 2 horas" },
 ];
@@ -41,7 +49,11 @@ export default function HeroSection() {
             type="video/mp4"
           />
         </video>
+<<<<<<< HEAD
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+=======
+        <div className="absolute inset-0 bg-primary/75" />
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
       </div>
 
       {/* Mobile gradient background */}
@@ -54,9 +66,15 @@ export default function HeroSection() {
               }`}
             style={{ lineHeight: 1 }}
           >
+<<<<<<< HEAD
             Orientação Especializada{" "}
             <span className="text-accent">Para Você Estruturar</span>{" "}
             e Finalizar Seu TCC com Segurança
+=======
+            Apoio Acadêmico de Qualidade{" "}
+            <span className="text-accent">Para Sua Jornada</span>{" "}
+            Universitária
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
           </h1>
 
           <p
@@ -64,6 +82,7 @@ export default function HeroSection() {
               }`}
             style={{ animationDelay: "0.2s" }}
           >
+<<<<<<< HEAD
             Suporte metodológico, revisão técnica e orientação acadêmica personalizada para universitários. Nosso papel é guiar você na construção do seu próprio trabalho, com clareza e qualidade.
           </p>
 
@@ -84,6 +103,19 @@ export default function HeroSection() {
           >
             Oferecemos orientação educacional, revisão técnica e suporte metodológico. Não elaboramos trabalhos acadêmicos completos.
           </p>
+=======
+            Oferecemos suporte completo para sua trajetória acadêmica. Apoio personalizado para universitários com orientação especializada em TCC, artigos e projetos.
+          </p>
+
+          <div
+            className={`mt-8 md:mt-10 ${loaded ? "animate-fade-rise" : "opacity-0"}`}
+            style={{ animationDelay: "0.4s" }}
+          >
+            <Button variant="hero" size="xl" onClick={scrollToContact} aria-label="Começar orientação acadêmica">
+              Solicitar Apoio Acadêmico
+            </Button>
+          </div>
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
         </div>
 
         {/* Trust badges */}

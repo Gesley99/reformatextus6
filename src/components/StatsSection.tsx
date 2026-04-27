@@ -1,10 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 
 const STATS = [
+<<<<<<< HEAD
   { value: 500, suffix: "+", label: "Alunos Orientados" },
   { value: 98, suffix: "%", label: "Satisfação com a Orientação" },
   { value: 5, suffix: "+", label: "Anos de Experiência" },
   { value: 100, suffix: "%", label: "Sigilo e Confidencialidade" },
+=======
+  { value: 500, suffix: "+", label: "Estudantes Atendidos" },
+  { value: 98, suffix: "%", label: "Taxa de Satisfação" },
+  { value: 5, suffix: "+", label: "Anos de Experiência" },
+  { value: 100, suffix: "%", label: "Atendimento Confidencial" },
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
 ];
 
 function CountUp({ target, suffix }: { target: number; suffix: string }) {

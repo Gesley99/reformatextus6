@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Check, AlertCircle, User, BookOpen, Lightbulb, GraduationCap } from "lucide-react";
 import { useStaggerReveal } from "@/hooks/useScrollReveal";
 
@@ -8,6 +9,17 @@ const BADGES = [
   { icon: User, label: "Autoria e Responsabilidade do Aluno", critical: true },
   { icon: BookOpen, label: "Suporte Metodológico" },
   { icon: Lightbulb, label: "Foco em Aprendizagem" },
+=======
+import { Check, AlertCircle, User, BookOpen, Lightbulb } from "lucide-react";
+import { useStaggerReveal } from "@/hooks/useScrollReveal";
+
+const BADGES = [
+  { icon: Check, label: "Normas ABNT" },
+  { icon: AlertCircle, label: "Sem Garantia de Aprovação", critical: true },
+  { icon: User, label: "Responsabilidade do Aluno", critical: true },
+  { icon: BookOpen, label: "Apoio Acadêmico Completo" },
+  { icon: Lightbulb, label: "Aconselhamento Acadêmico" },
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
 ];
 
 export default function ComplianceBadges() {

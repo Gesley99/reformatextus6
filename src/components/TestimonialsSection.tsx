@@ -2,10 +2,17 @@ import { Star } from "lucide-react";
 import { useStaggerReveal } from "@/hooks/useScrollReveal";
 
 const TESTIMONIALS = [
+<<<<<<< HEAD
   { name: "Maria Silva", initials: "MS", role: "Graduação em Engenharia", text: "A orientação da Textus me ajudou a entender como organizar meu TCC de forma clara e profissional. Aprendi muito sobre estruturação e normas ABNT, o que fez toda a diferença no resultado." },
   { name: "Carlos Ferreira", initials: "CF", role: "Mestrado em Administração", text: "O feedback detalhado da equipe me ajudou a melhorar significativamente a coerência e a metodologia do meu artigo. Me senti muito mais seguro para defender meu trabalho." },
   { name: "Ana Costa", initials: "AC", role: "Graduação em Direito", text: "A orientação foi discreta e muito profissional. Ganhei confiança e clareza para finalizar meu relatório com uma estrutura bem organizada." },
   { name: "Pedro Oliveira", initials: "PO", role: "Especialização em Educação", text: "A Textus me direcionou com materiais e feedbacks que me fizeram entender meu tema mais profundamente. Melhor investimento em orientação acadêmica que já fiz." },
+=======
+  { name: "Maria Silva", initials: "MS", role: "Graduação em Engenharia", text: "A Textus ajudou a estruturar meu TCC de forma clara e profissional. A orientação acadêmica foi essencial para organizar todo o trabalho conforme as normas ABNT." },
+  { name: "Carlos Ferreira", initials: "CF", role: "Mestrado em Administração", text: "O atendimento personalizado foi impressionante. O feedback melhorou significativamente a coerência e a apresentação formal do meu artigo científico." },
+  { name: "Ana Costa", initials: "AC", role: "Graduação em Direito", text: "Suporte discreto, profissional e atencioso. Ganhei confiança para entregar um relatório bem estruturado e organizado." },
+  { name: "Pedro Oliveira", initials: "PO", role: "Especialização em Educação", text: "Melhor investimento em orientação acadêmica que já fiz. A Textus entendeu minhas dificuldades e forneceu material de apoio super útil." },
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
 ];
 
 export default function TestimonialsSection() {
@@ -15,7 +22,11 @@ export default function TestimonialsSection() {
     <section className="bg-primary py-20 md:py-28 px-4 md:px-6" aria-labelledby="testimonials-title">
       <div className="container mx-auto max-w-6xl">
         <h2 id="testimonials-title" className="font-display text-2xl md:text-4xl text-primary-foreground text-center text-balance">
+<<<<<<< HEAD
           O Que Nossos Alunos Dizem Sobre a Orientação
+=======
+          O Que Nossos Alunos Dizem
+>>>>>>> 046218b01546855bc85d478cbc589878f54830ad
         </h2>
         <div ref={ref} className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {TESTIMONIALS.map((t) => (
