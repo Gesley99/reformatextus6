@@ -1,0 +1,25 @@
+# Textus Acadêmico — hospedagem Apache (Hostinger, HostGator, Locaweb etc.)
+Options -MultiViews
+DirectoryIndex index.html
+RewriteEngine On
+
+# Força HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Arquivos e pastas existentes são servidos normalmente
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Qualquer outra rota cai no app (página 404 do próprio site)
+RewriteRule ^ index.html [L]
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>

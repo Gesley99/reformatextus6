@@ -1,42 +1,32 @@
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import ServicesSection from "@/components/ServicesSection";
-import HowItWorks from "@/components/HowItWorks";
-import AboutSection from "@/components/AboutSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import StatsSection from "@/components/StatsSection";
-import DifferentialsSection from "@/components/DifferentialsSection";
-import SecondaryCTA from "@/components/SecondaryCTA";
-import ComplianceBadges from "@/components/ComplianceBadges";
-import FAQSection from "@/components/FAQSection";
-import ContactForm from "@/components/ContactForm";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import LegalNotice from "@/components/LegalNotice";
-import FooterSection from "@/components/FooterSection";
+import Header from "@/components/site/Header";
+import Hero from "@/components/site/Hero";
+import Services from "@/components/site/Services";
+import Process from "@/components/site/Process";
+import About from "@/components/site/About";
+import Testimonials from "@/components/site/Testimonials";
+import Commitments from "@/components/site/Commitments";
+import Faq from "@/components/site/Faq";
+import Contact from "@/components/site/Contact";
+import Footer from "@/components/site/Footer";
+import WhatsAppFab from "@/components/site/WhatsAppFab";
 
-const Index = () => {
-  return (
-    <>
-      <a href="#contato" className="skip-link">Pular para o conteúdo principal</a>
-      <Navbar />
-      <main>
-        <HeroSection />
-        <ServicesSection />
-        <HowItWorks />
-        <AboutSection />
-        <TestimonialsSection />
-        <StatsSection />
-        <DifferentialsSection />
-        <SecondaryCTA />
-        <ComplianceBadges />
-        <FAQSection />
-        <ContactForm />
-      </main>
-      <LegalNotice />
-      <FooterSection />
-      <FloatingWhatsApp />
-    </>
-  );
-};
+const Index = () => (
+  <>
+    <a href="#contato" className="skip-link">Pular para o contato</a>
+    <Header />
+    <main>
+      <Hero />
+      <Services />
+      <Process />
+      <About />
+      <Testimonials />
+      <Commitments />
+      <Faq />
+      <Contact />
+    </main>
+    <Footer />
+    <WhatsAppFab />
+  </>
+);
 
 export default Index;

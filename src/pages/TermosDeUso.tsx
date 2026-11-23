@@ -11,14 +11,14 @@ export default function TermosDeUso() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="bg-primary text-primary-foreground py-16 md:py-20 px-4 md:px-6">
+      <header className="bg-ink text-primary-foreground py-16 md:py-20 px-4 md:px-6">
         <div className="container mx-auto max-w-4xl">
           <Link to="/" className="inline-flex items-center gap-2 text-accent text-sm font-medium hover:underline mb-6">
             <ArrowLeft size={16} /> Voltar ao Início
           </Link>
           <div className="flex items-center gap-3 mb-4">
             <FileText className="text-accent" size={32} />
-            <h1 className="font-display text-3xl md:text-4xl font-bold">Termos de Uso</h1>
+            <h1 className="font-display text-3xl md:text-4xl font-medium">Termos de Uso</h1>
           </div>
           <p className="text-primary-foreground/70 text-sm font-body">Última atualização: Abril de 2026</p>
         </div>
@@ -28,14 +28,14 @@ export default function TermosDeUso() {
       <main className="container mx-auto max-w-4xl px-4 md:px-6 py-12 md:py-16">
         <div className="prose-custom space-y-8">
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">1. Aceitação dos Termos</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">1. Aceitação dos Termos</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Ao acessar e utilizar o site e os serviços da Textus Acadêmico, você declara ter lido, compreendido e concordado com estes Termos de Uso. Caso não concorde com quaisquer condições aqui descritas, solicitamos que não utilize nossos serviços.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">2. Descrição dos Serviços</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">2. Descrição dos Serviços</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               A Textus Acadêmico oferece exclusivamente serviços de <strong className="text-primary">orientação educacional, suporte metodológico, revisão técnica e aconselhamento acadêmico</strong> para estudantes universitários.
             </p>
@@ -48,7 +48,7 @@ export default function TermosDeUso() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">3. Natureza Educacional</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">3. Natureza Educacional</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Todos os materiais, feedbacks, orientações e suportes fornecidos pela Textus Acadêmico têm finalidade exclusivamente didática e educacional. Devem ser utilizados como:
             </p>
@@ -60,7 +60,7 @@ export default function TermosDeUso() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">4. Responsabilidades do Contratante</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">4. Responsabilidades do Contratante</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               O contratante (aluno/estudante) é integralmente responsável por:
             </p>
@@ -74,7 +74,7 @@ export default function TermosDeUso() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">5. Ausência de Garantia de Resultados</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">5. Ausência de Garantia de Resultados</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               A Textus Acadêmico <strong className="text-primary">não garante aprovação</strong> em avaliações, bancas ou qualquer resultado acadêmico. A aprovação de trabalhos depende de múltiplos fatores que estão fora do nosso controle, incluindo o conteúdo desenvolvido pelo aluno, critérios do avaliador, participação e defesa do trabalho.
             </p>
@@ -84,28 +84,28 @@ export default function TermosDeUso() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">6. Confidencialidade</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">6. Confidencialidade</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Mantemos total sigilo profissional sobre todas as informações, dados e conteúdos compartilhados pelo contratante durante a prestação do serviço de orientação educacional. Não divulgamos informações pessoais ou acadêmicas a terceiros.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">7. Propriedade Intelectual</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">7. Propriedade Intelectual</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Todo o conteúdo do site da Textus Acadêmico (textos, imagens, design, marca) é de propriedade da empresa e protegido por lei. É proibida a reprodução total ou parcial sem autorização prévia por escrito.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">8. Pagamento e Reembolso</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">8. Pagamento e Reembolso</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Os valores dos serviços de orientação são informados antes da contratação. As condições de pagamento e eventuais políticas de reembolso são acordadas diretamente entre as partes antes do início da orientação.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">9. Limitação de Responsabilidade</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">9. Limitação de Responsabilidade</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               A Textus Acadêmico não se responsabiliza por:
             </p>
@@ -118,27 +118,27 @@ export default function TermosDeUso() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">10. Alterações nos Termos</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">10. Alterações nos Termos</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               A Textus Acadêmico reserva-se o direito de alterar estes Termos de Uso a qualquer momento, mediante publicação da versão atualizada nesta página. Recomendamos a revisão periódica deste documento.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">11. Legislação Aplicável</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">11. Legislação Aplicável</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Estes Termos de Uso são regidos pelas leis da República Federativa do Brasil. Qualquer disputa será submetida ao foro da comarca de Brasília-DF.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">12. Contato</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">12. Contato</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Para dúvidas sobre estes Termos de Uso, entre em contato:
             </p>
             <div className="mt-3 bg-card border border-border rounded-lg p-4 text-sm font-body text-muted-foreground space-y-1">
-              <p><strong className="text-primary">E-mail:</strong> textusacademico@gmail.com</p>
-              <p><strong className="text-primary">WhatsApp:</strong> +55 61 9621-2692</p>
+              <p><strong className="text-primary">E-mail:</strong> textuscademico@gmail.com</p>
+              <p><strong className="text-primary">WhatsApp:</strong> +55 61 99621-2692</p>
             </div>
           </section>
         </div>

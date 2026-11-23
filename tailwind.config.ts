@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Montserrat', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        display: ['"Fraunces Variable"', 'Georgia', 'serif'],
+        body: ['"Manrope Variable"', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -60,6 +60,7 @@ export default {
           hover: "hsl(var(--whatsapp-hover))",
         },
         "section-alt": "hsl(var(--section-alt))",
+        ink: "hsl(var(--ink))",
       },
       borderRadius: {
         lg: "var(--radius)",

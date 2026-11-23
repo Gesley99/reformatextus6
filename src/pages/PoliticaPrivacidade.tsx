@@ -11,14 +11,14 @@ export default function PoliticaPrivacidade() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="bg-primary text-primary-foreground py-16 md:py-20 px-4 md:px-6">
+      <header className="bg-ink text-primary-foreground py-16 md:py-20 px-4 md:px-6">
         <div className="container mx-auto max-w-4xl">
           <Link to="/" className="inline-flex items-center gap-2 text-accent text-sm font-medium hover:underline mb-6">
             <ArrowLeft size={16} /> Voltar ao Início
           </Link>
           <div className="flex items-center gap-3 mb-4">
             <Shield className="text-accent" size={32} />
-            <h1 className="font-display text-3xl md:text-4xl font-bold">Política de Privacidade</h1>
+            <h1 className="font-display text-3xl md:text-4xl font-medium">Política de Privacidade</h1>
           </div>
           <p className="text-primary-foreground/70 text-sm font-body">Última atualização: Abril de 2026</p>
         </div>
@@ -28,7 +28,7 @@ export default function PoliticaPrivacidade() {
       <main className="container mx-auto max-w-4xl px-4 md:px-6 py-12 md:py-16">
         <div className="prose-custom space-y-8">
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">1. Informações Gerais</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">1. Informações Gerais</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               A Textus Acadêmico ("nós", "nossa empresa") está comprometida em proteger a privacidade de seus usuários. Esta Política de Privacidade descreve como coletamos, utilizamos, armazenamos e protegemos as informações pessoais que você nos fornece através do nosso site e serviços de orientação educacional.
             </p>
@@ -38,7 +38,7 @@ export default function PoliticaPrivacidade() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">2. Dados Que Coletamos</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">2. Dados Que Coletamos</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">Podemos coletar os seguintes tipos de informações quando você utiliza nosso site:</p>
             <ul className="mt-3 space-y-2 text-muted-foreground text-sm font-body">
               <li className="flex items-start gap-2"><span className="text-accent font-bold">•</span> <strong>Dados de identificação:</strong> nome completo, e-mail, telefone.</li>
@@ -49,7 +49,7 @@ export default function PoliticaPrivacidade() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">3. Como Utilizamos Seus Dados</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">3. Como Utilizamos Seus Dados</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">Utilizamos suas informações para:</p>
             <ul className="mt-3 space-y-2 text-muted-foreground text-sm font-body">
               <li className="flex items-start gap-2"><span className="text-accent font-bold">•</span> Prestar serviços de orientação educacional e suporte metodológico.</li>
@@ -60,7 +60,7 @@ export default function PoliticaPrivacidade() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">4. Compartilhamento de Dados</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">4. Compartilhamento de Dados</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros para fins de marketing. Seus dados poderão ser compartilhados apenas:
             </p>
@@ -71,14 +71,14 @@ export default function PoliticaPrivacidade() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">5. Armazenamento e Segurança</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">5. Armazenamento e Segurança</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Adotamos medidas técnicas e organizacionais adequadas para proteger seus dados pessoais contra acesso não autorizado, alteração, divulgação ou destruição. Os dados são armazenados de forma segura e tratados com total confidencialidade.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">6. Seus Direitos (LGPD)</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">6. Seus Direitos (LGPD)</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você tem o direito de:
             </p>
@@ -92,27 +92,27 @@ export default function PoliticaPrivacidade() {
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">7. Cookies</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">7. Cookies</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Nosso site pode utilizar cookies e tecnologias similares para melhorar sua experiência de navegação. Cookies são pequenos arquivos de texto armazenados no seu dispositivo que nos ajudam a entender como você utiliza o site. Você pode desativar cookies nas configurações do seu navegador.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">8. Alterações Nesta Política</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">8. Alterações Nesta Política</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Reservamo-nos o direito de alterar esta Política de Privacidade a qualquer momento. Quaisquer alterações serão publicadas nesta página com a data de atualização. Recomendamos que revise esta política periodicamente.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-bold">9. Contato</h2>
+            <h2 className="font-display text-xl md:text-2xl text-primary mb-3 font-medium">9. Contato</h2>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Para dúvidas, solicitações ou exercício dos seus direitos relativos a dados pessoais, entre em contato conosco:
             </p>
             <div className="mt-3 bg-card border border-border rounded-lg p-4 text-sm font-body text-muted-foreground space-y-1">
-              <p><strong className="text-primary">E-mail:</strong> textusacademico@gmail.com</p>
-              <p><strong className="text-primary">WhatsApp:</strong> +55 61 9621-2692</p>
+              <p><strong className="text-primary">E-mail:</strong> textuscademico@gmail.com</p>
+              <p><strong className="text-primary">WhatsApp:</strong> +55 61 99621-2692</p>
             </div>
           </section>
         </div>
